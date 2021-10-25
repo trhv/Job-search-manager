@@ -52,5 +52,6 @@ server.listen(port, () => {
     });
     // our only exception to avoiding console.log(), because we
     // always want to know when the server is done starting up
+    // eslint-disable-next-line no-console
     console.log(runningMessage);
 });

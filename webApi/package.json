@@ -1,12 +1,13 @@
 {
-  "name": "webApi",
+  "name": "web-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
     "debug": "export DEBUG=* && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +33,10 @@
     "@types/mocha": "^9.0.0",
     "@types/shortid": "0.0.29",
     "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
     "chai": "^4.3.4",
+    "eslint": "^8.1.0",
     "mocha": "^9.1.2",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.6",
